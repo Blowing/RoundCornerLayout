@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,8 +11,106 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.wujie.roundcornerlayout.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <com.wujie.roundcornerlayout.view.RoundCornerLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:round_corner="30dp"
+        app:round_corner_top_left="0dp"
+        app:stroke_color="#E39E83"
+        app:stroke_width="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+    </com.wujie.roundcornerlayout.view.RoundCornerLayout>
+
+    <com.wujie.roundcornerlayout.view.RoundCornerLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:round_corner="30dp"
+        app:round_corner_top_right="0dp"
+        app:stroke_color="#E39E83"
+        app:stroke_width="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+    </com.wujie.roundcornerlayout.view.RoundCornerLayout>
+
+    <com.wujie.roundcornerlayout.view.RoundCornerLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:round_corner="30dp"
+        app:round_corner_bottom_left="0dp"
+        app:stroke_color="#E39E83"
+        app:stroke_width="2dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+    </com.wujie.roundcornerlayout.view.RoundCornerLayout>
+
+    <com.wujie.roundcornerlayout.view.RoundCornerLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:round_corner="30dp"
+        app:round_corner_bottom_right="0dp"
+        app:stroke_color="#E39E83"
+        app:stroke_width="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+    </com.wujie.roundcornerlayout.view.RoundCornerLayout>
+
+    <com.wujie.roundcornerlayout.view.RoundCornerLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        app:round_as_circle="true"
+        app:round_corner="30dp"
+        app:round_corner_bottom_right="0dp"
+        app:stroke_color="#E39E83"
+        app:stroke_width="4dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:background="#995F5652"
+            android:gravity="center_horizontal"
+            android:text="害怕.png"
+            android:textColor="#fff"
+            android:textSize="24sp"/>
+
+    </com.wujie.roundcornerlayout.view.RoundCornerLayout>
+
 </RelativeLayout>
